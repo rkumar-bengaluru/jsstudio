@@ -67,27 +67,27 @@
        transform="matrix(1.0342864,0,0,1.0897727,-0.28180105,-0.48546837)" />
     <text
        xml:space="preserve"
-       style="font-size:18.6085px;line-height:1.25;font-family:sans-serif;stroke-width:1.39566;fill:#ff0000;"
-       x="0.6313116"
-       y="13.692157"
+       style="font-size:18.6085px;line-height:1.25;font-family:sans-serif;fill:#ff0000;stroke-width:1.39566"
+       x="-0.2776778"
+       y="13.823276"
        id="text1418"
-       transform="scale(0.83498248,1.1976299)"><tspan
+       transform="scale(0.83498249,1.1976299)"><tspan
          sodipodi:role="line"
          id="tspan1416"
-         x="0.6313116"
-         y="13.692157"
-         style="stroke-width:1.39566;fill:#ff0000;">J</tspan></text>
+         x="-0.2776778"
+         y="13.823276"
+         style="fill:#ff0000;stroke-width:1.39566">J</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18.4483px;line-height:1.25;font-family:sans-serif;fill:#000080;stroke-width:1.38364"
-       x="7.1936665"
-       y="13.785187"
+       x="8.3745012"
+       y="13.895402"
        id="text1418-1"
-       transform="scale(0.84223415,1.1873183)"><tspan
+       transform="scale(0.84223414,1.1873183)"><tspan
          sodipodi:role="line"
          id="tspan1416-5"
-         x="7.1936665"
-         y="13.785187"
+         x="8.3745012"
+         y="13.895402"
          style="fill:#000080;stroke-width:1.38364">S</tspan></text>
   </g>
 </svg>
