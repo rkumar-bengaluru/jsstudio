@@ -18,6 +18,10 @@ class App extends React.Component {
 		this.code = 'function sayHello() {\n\tconsole.log(\'hello to browser\');\n}\nsayHello();'
 	}
 
+	componentDidMount() {
+		this.cm.current.editor.setSize(600,"100%");
+	}
+
 	async toggle() {
 		if (this.state.isRunning) {
 			await this.setState({ isRunning: false });
@@ -97,6 +101,7 @@ class App extends React.Component {
 	handleClick = async () => {
 		await this.togglePromise();
 		//console.log(this.cm.current.editor.getValue());
+		document.getElementById('error_area').innerHTML = '';
 		var doc = this.createIFrame();
 		var code = this.getCodetoExec();
 		doc.open();
