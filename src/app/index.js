@@ -19,7 +19,7 @@ class App extends React.Component {
 	}
 
 	componentDidMount() {
-		this.cm.current.editor.setSize(600,"100%");
+		this.cm.current.editor.setSize(600, "100%");
 	}
 
 	async toggle() {
@@ -97,7 +97,7 @@ class App extends React.Component {
 		//console.log(code);
 		return code;
 	}
-	
+
 	handleClick = async () => {
 		await this.togglePromise();
 		//console.log(this.cm.current.editor.getValue());
@@ -108,9 +108,9 @@ class App extends React.Component {
 		doc.write(code); // look mum, no eval
 		doc.close();
 		var spans = doc.getElementsByTagName('SPAN');
-                for (var i = 0; i < spans.length; i++) {
-                    spans[i].style.color = "white";
-                }
+		for (var i = 0; i < spans.length; i++) {
+			spans[i].style.color = "white";
+		}
 		await this.togglePromise();
 		//console.log('handleClick ->' + this.state.isRunning);
 	}
