@@ -6,8 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Rupak Kumar">
-  <meta name="description"
-    content="Test your JavaScript, CSS, HTML or CoffeeScript online with JSStudio code editor.">
+  <meta name="description" content="Test your JavaScript, CSS, HTML or CoffeeScript online with JSStudio code editor.">
   <meta name="application-name" content="JSStudio">
   <meta name="keywords"
     content="online javascript editor, testing javascript online, online ide, online code editor, html, css, scss online editor">
@@ -16,8 +15,7 @@
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
   <!-- Social Meta Tags-->
-  <meta property="og:title"
-    content="JSStudio - a light & fast javascript editor online free!">
+  <meta property="og:title" content="JSStudio - a light & fast javascript editor online free!">
   <meta property="og:description"
     content="Online JavaScript Editor - Test your JavaScript, CSS, HTML online with JSStudio code editor. write and run your javascript code inside this page.">
   <meta property="og:image" itemprop="image" content="img/logo.svg">
@@ -28,8 +26,7 @@
   <meta property="og:image:width" content="500">
   <meta property="og:image:height" content="300">
   <!--Twitter Tags-->
-  <meta name="twitter:title"
-    content="JSStudio - a light & fast javascript editor online free!">
+  <meta name="twitter:title" content="JSStudio - a light & fast javascript editor online free!">
   <meta name="twitter:description"
     content="Test your JavaScript, CSS, HTML or CoffeeScript online with JSStudio code editor.">
   <meta name="twitter:image" content="img/logo.svg">
@@ -47,11 +44,9 @@
   <meta name="ICBM" content="13.085623, 77.555795" />
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-    crossorigin="anonymous" />
 
 
   <!--
@@ -89,12 +84,22 @@
     -->
   <!-- Import jQuery before materialize.js -->
   <!-- Bootstrap 4 -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/codemirror.min.css"
+    integrity="sha512-xIf9AdJauwKIVtrVRZ0i4nHP61Ogx9fSRAkCLecmE2dL/U8ioWpDvFCAy4dcfecN72HHB9+7FfQj3aiO68aaaw=="
+    crossorigin="anonymous" />
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
     integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA=="
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-191905399-1"></script>
   <script>
@@ -103,6 +108,12 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-191905399-1');
+  </script>
+  <script>
+    function alert_message(alert_type, msg) { // alert_type = block, error, success, info
+      var msg = '<a class="close" href="javascript:;" onClick="document.getElementById(\'error_area\').innerHTML = \'\'");">&times;</a>' + msg;
+      document.getElementById('error_area').innerHTML = msg; // better than .html(msg) because malformed html was causing error
+    }
   </script>
 </body>
 
