@@ -100,19 +100,19 @@ class App extends React.Component {
 
 	handleClick = async () => {
 		await this.togglePromise();
-		//console.log(this.cm.current.editor.getValue());
-		document.getElementById('error_area').innerHTML = '';
-		var doc = this.createIFrame();
-		var code = this.getCodetoExec();
-		doc.open();
-		doc.write(code); // look mum, no eval
-		doc.close();
-		var spans = doc.getElementsByTagName('SPAN');
-		for (var i = 0; i < spans.length; i++) {
-			spans[i].style.color = "white";
-		}
+		console.log(this.cm.current.editor.getValue());
+		// document.getElementById('error_area').innerHTML = '';
+		// var doc = this.createIFrame();
+		// var code = this.getCodetoExec();
+		// doc.open();
+		// doc.write(code); // look mum, no eval
+		// doc.close();
+		// var spans = doc.getElementsByTagName('SPAN');
+		// for (var i = 0; i < spans.length; i++) {
+		// 	spans[i].style.color = "white";
+		// }
 		await this.togglePromise();
-		//console.log('handleClick ->' + this.state.isRunning);
+		console.log('handleClick ->' + this.state.isRunning);
 	}
 
 	render() {
