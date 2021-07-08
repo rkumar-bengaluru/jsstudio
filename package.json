@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "start-prod": "env-cmd -f .env.prod react-scripts start .env",
-    "build": "react-scripts build && copy build\\index.html . /Y && copy build\\img\\* img\\ /Y && rmdir static\\ /Q/S && xcopy build\\static\\* static\\ /E/Y",
+    "build": "react-scripts build && copy build\\index.html . /Y && rmdir jsstudio\\ /Q/S && xcopy build\\* jsstudio\\ /E/Y",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -8,7 +8,7 @@ const StudioHeader = props => {
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary static-top">
 
                 <a className="ml-auto" href="https://www.vlocalshop.in" target="_blank" rel="noopener noreferrer">
-                    <img src="/img/logo.svg" alt="LocalShop" />
+                    <img src="jsstudio/img/logo.svg" alt="LocalShop" />
                 </a>
                 <div className="container">
                     <p className="font-weight-bold text-white ml-auto">JavaScript Studio</p>
