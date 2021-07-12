@@ -5,7 +5,7 @@ import AppLayout from './layout';
 import App from './app';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={window.location.pathname || ''}>
     <AppLayout>
       <Switch>
         <Route exact path="/" component={App} />
