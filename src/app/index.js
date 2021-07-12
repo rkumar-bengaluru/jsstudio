@@ -99,23 +99,25 @@ class App extends React.Component {
 	}
 
 	handleClick = async () => {
+		console.log('handleClick ->');
 		await this.togglePromise();
 		console.log(this.cm.current.editor.getValue());
-		// document.getElementById('error_area').innerHTML = '';
-		// var doc = this.createIFrame();
-		// var code = this.getCodetoExec();
-		// doc.open();
-		// doc.write(code); // look mum, no eval
-		// doc.close();
-		// var spans = doc.getElementsByTagName('SPAN');
-		// for (var i = 0; i < spans.length; i++) {
-		// 	spans[i].style.color = "white";
-		// }
+		document.getElementById('error_area').innerHTML = '';
+		var doc = this.createIFrame();
+		var code = this.getCodetoExec();
+		doc.open();
+		doc.write(code); // look mum, no eval
+		doc.close();
+		var spans = doc.getElementsByTagName('SPAN');
+		for (var i = 0; i < spans.length; i++) {
+			spans[i].style.color = "white";
+		}
 		await this.togglePromise();
 		console.log('handleClick ->' + this.state.isRunning);
 	}
 
 	render() {
+		console.log('loading...');
 		return (
 			<div className="content">
 				<div className="row justify-content-around m-1">
