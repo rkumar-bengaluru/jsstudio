@@ -15,7 +15,7 @@ class App extends React.Component {
 		this.result = React.createRef();
 		// This binding is necessary to make `this` work in the callback
 		this.handleClick = this.handleClick.bind(this);
-		this.code = 'function sayHello() {\n\tconsole.log(\'hello to browser\');\n}\nsayHello();'
+		this.code = "var input = [\"rupak\",\"aryan\",\"rupak\"];\n/**\n * Using map we can achieve this is 1 iteration. Loop over each\n * item in the array and check if the item is present in the\n * map or not. If not present add the item in the new array.\n *\n * Brute force will take O(n2), where each item is iterated \n * over the array 2 times. Example:- take the first item and \n * iterate over the remaining item.\n * **/\n function removeDup() {\n\t // print the input array.\n\t console.log('input : ' + JSON.stringify(input));\n\t const map = new Map();\n\t var output = [];\n\t for(var i = 0; i < input.length; i++) {\n\t\t// check if the item is present or not.\n\t\tif(!map.get(input[i])) {\n\t\t\t// not present and hence add to map\n\t\t\tmap.set(input[i],input[i]);\n\t\t\t// add to output array.\n\t\t\toutput.push(input[i]);\n\t\t}\n\t}\n\t// print the output array.\n\tconsole.log('output : ' + JSON.stringify(output));\n}\n\nremoveDup();";
 	}
 
 	componentDidMount() {
